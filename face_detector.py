@@ -16,8 +16,8 @@ for x, y, w, h in faces: #this for loop writes a rectangle on the photo
 
 resized=cv2.resize(img,(int(img.shape[1]/3), int(img.shape[1]/3))) #resizes the enf image
 
-cv2.imwrite("s-p-b-sa-fd.jpg", resized)
+cv2.imwrite("s-p-b-sa-fd.jpg", resized) #writes down an image with that name and resized as defined in line 17
 
-cv2.imshow("gray", img)
-cv2.waitKey()
-cv2.destroyAllWindows
+cv2.imshow("gray", img)  #shows the image with the title of the window gray
+cv2.waitKey() #waits for a key press
+cv2.destroyAllWindows #and in the end this shutdowns the windows 
